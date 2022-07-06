@@ -8,15 +8,20 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: black;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.container {
+    min-height: calc(100vh - 10rem); 
+    position: relative;
 }
 
 .calc-grid {
     display: grid;
     justify-content: center;
     margin-top: 7rem;
-    grid-template-columns: repeat(4, 3.6rem);
-    grid-template-rows: minmax(4rem, auto) repeat(5, 3.5rem);
+    grid-template-columns: repeat(4, 4.5rem);
+    grid-template-rows: minmax(4rem, auto) repeat(5, 4.5rem);
 }
 
 .output {
@@ -36,14 +41,14 @@ body {
 }
 
 .output .current {
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: rgba(255, 255, 255, 1);
 }
 
 button {
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 1.2rem;
     border: none;
     cursor: pointer;
@@ -52,7 +57,7 @@ button {
 .span-two {
     grid-column: span 2;
     border-radius: 50px;
-    width: 6.8rem;
+    width: 8.4rem;
 }
 
 .gray-btn {
@@ -80,4 +85,16 @@ button {
 
 .number:hover, .number:focus {
     background-color: rgba(47, 79, 79, 1);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer > p {
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
 }
